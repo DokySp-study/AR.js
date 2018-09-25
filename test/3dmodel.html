@@ -1,0 +1,31 @@
+
+<head>
+	<!-- include A-Frame obviously -->
+	<script src="lib/aframe.min.js"></script>
+	<!-- include ar.js for A-Frame -->
+	<script src="lib/aframe-ar.js"></script>
+</head>
+
+
+<style type="text/css">	
+	#arjsDebugUIContainer {
+		visibility: hidden;
+	}
+</style>
+
+
+<body style='margin : 0px; overflow: hidden;'>
+
+	<a-scene embedded arjs>
+ 		
+		<a-assets>
+			<a-asset-item id="test" src="../media/testModel.gltf"></a-asset-item>
+		</a-assets>
+		
+		<a-entity gltf-model="#test"></a-entity>
+
+	    <a-marker-camera preset='hiro'></a-marker-camera>
+
+  	</a-scene>
+
+</body>

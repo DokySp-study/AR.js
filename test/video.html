@@ -1,0 +1,27 @@
+
+<head>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- include A-Frame obviously -->
+	<script src="lib/aframe.min.js"></script>
+	<!-- include ar.js for A-Frame -->
+	<script src="lib/aframe-ar.js"></script>
+</head>
+
+
+<style type="text/css">	
+	#arjsDebugUIContainer {
+		visibility: hidden;
+	}
+</style>
+
+
+<body style='margin : 0px; overflow: hidden;'>
+
+	<a-scene embedded arjs>
+ 
+	    <a-video src="../media/test.mp4" width="1.6" height="0.9" rotation="90 180 0" ></a-video>
+
+	    <a-marker-camera preset='hiro'></a-marker-camera>
+  	</a-scene>
+
+</body>

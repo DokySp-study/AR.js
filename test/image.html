@@ -1,0 +1,27 @@
+
+<head>
+	<!-- include A-Frame obviously -->
+	<script src="lib/aframe.min.js"></script>
+	<!-- include ar.js for A-Frame -->
+	<script src="lib/aframe-ar.js"></script>	
+</head>
+
+
+<style type="text/css">	
+	#arjsDebugUIContainer {
+		visibility: hidden;
+	}
+</style>
+
+
+<body style='margin : 0px; overflow: hidden;'>
+
+	<a-scene embedded arjs>
+	    
+	    <a-image src="testImage.png" rotation="90 180 0"></a-image>
+	    
+	    <a-marker-camera preset='hiro'></a-marker-camera>
+	    
+  	</a-scene>
+
+</body>
