@@ -19,11 +19,20 @@
 
 	<a-scene embedded arjs>
  		
+	<a-scene>
 		<a-assets>
+		    <a-asset-item id="test" src="media/testModel.obj"></a-asset-item>
+		    <!-- <a-asset-item id="tree-mtl" src="/path/to/tree.mtl"></a-asset-item> -->
+		</a-assets>
+		<a-entity obj-model="obj: #test"></a-entity>
+		<!-- <a-entity obj-model="obj: #test; mtl: #tree-mtl"></a-entity> -->
+	</a-scene>
+
+		<!-- <a-assets>
 			<a-asset-item id="test" src="media/BoomBox.gltf"></a-asset-item>
 		</a-assets>
 		
-		<a-entity gltf-model="#test"></a-entity>
+		<a-entity gltf-model="#test"></a-entity> -->
 
 	    <a-marker-camera preset='hiro'></a-marker-camera>
 
