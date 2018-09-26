@@ -19,14 +19,13 @@
 
 	<a-scene embedded arjs>
 	    
-	
 	 	<a-assets>
 	    	<img id="homeThumbnail" src="media/pin.png" rotation="0 0 0">
 	  	</a-assets>
 
 	  	<a-entity link="href: index.html; title: 처음으로 돌아가기; image: #homeThumbnail"></a-entity>
 	    
-	    <a-marker-camera preset='hiro'></a-marker-camera>
+	    <a-marker-camera type='pattern' url='marker/test.patt'></a-marker-camera>
 	    
   	</a-scene>
 
