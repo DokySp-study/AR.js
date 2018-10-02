@@ -20,10 +20,10 @@
 	<a-scene embedded arjs>
  		
 		<a-assets>
-			<video id="vck" src="media/testVideoCK.mp4" loop autoplay muted />
+			<a-asset-item id="vck" src="media/testVideoCK.mp4" muted webkit-playsinline playsinline autoplay></a-asset-item>
 		</a-assets>
 
-		<a-entity material="shader: chromakey; src: #vck; color: 0.1 0.9 0.2" geometry="primitive: box"></a-entity>
+		<a-entity material="shader: chromakey; src: #vck; color: 0.1 0.9 0.2"></a-entity>
 
 	    <a-marker-camera type='pattern' url='marker/testA.patt'></a-marker-camera>
 
