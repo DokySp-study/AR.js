@@ -13,6 +13,9 @@
 	#arjsDebugUIContainer {
 		visibility: hidden;
 	}
+	video {
+		
+	}
 </style>
 
 <body style='margin : 0px; overflow: hidden;'>
@@ -20,7 +23,7 @@
 	<a-scene embedded arjs>
  		
 		<a-assets>
-			<video id="vck" src="media/testVideoCK.mp4" muted webkit-playsinline playsinline autoplay></video>
+			<video id="vck" src="media/testVideoCK.mp4" muted webkit-playsinline playsinline autoplay loop></video>
 		</a-assets>
 
 		<a-entity material="shader: chromakey; src: #vck; color: 0.1 0.9 0.2" geometry="primitive: box"></a-entity>
