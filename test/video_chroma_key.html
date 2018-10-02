@@ -20,7 +20,7 @@
 	<a-scene embedded arjs>
  		
 		<a-assets>
-			<a-asset-item id="vck" src="media/testVideoCK.mp4" muted webkit-playsinline playsinline autoplay></a-asset-item>
+			<video id="vck" src="media/testVideoCK.mp4" muted webkit-playsinline playsinline autoplay></video>
 		</a-assets>
 
 		<a-entity material="shader: chromakey; src: #vck; color: 0.1 0.9 0.2" geometry="primitive: box"></a-entity>
