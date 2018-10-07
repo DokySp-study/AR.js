@@ -5,27 +5,28 @@
 	<!-- include ar.js for A-Frame -->
 	<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 </head>
-</head>
+
 
 <style type="text/css">	
 	#arjsDebugUIContainer {
 		visibility: hidden;
 	}
-	a-assets, a-scene audio, a-scene img, a-scene video {
-	    display: block;
-	    visibility: visible;
-	}
 </style>
+
+<span></span>
 
 <body style='margin : 0px; overflow: hidden;'>
 
 	<a-scene embedded arjs>
  		
-		<a-assets>t
-			<iframe id="yt" width="560" height="315" src="htps://www.youtube.com/embed/FdnJeS2ABFg?rel=0&autoplay=1&amp;controls=0&amp;showinfo=0&amp;origin=https://ar-test.colaboapp.cc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+ 		
+	
+		<a-assets>
+			<a-asset-item id="test" src="media/robot.gltf"></a-asset-item>
 		</a-assets>
-
-		<a-entity position="0 0.6 0" scale="3.2 1.8 0" material="src: #yt; color: 0.1 0.9 0.2" geometry="primitive: box"></a-entity>
+		<!-- <a-entity scale="0.01 0.01 0.01" rotation="290 80 300" obj-model="obj: #test; mtl: #test-mtl"></a-entity> -->
+		
+		<a-entity gltf-model="#test"></a-entity>
 
 	    <a-marker-camera type='pattern' url='marker/testA.patt'></a-marker-camera>
 
