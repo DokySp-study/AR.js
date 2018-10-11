@@ -30,16 +30,17 @@
 		Using the asset management system.
 		<a-collada-model src="#tree"></a-collada-model> -->
 
-    <a-entity collada-model="url(media/atk_dae.dae)"></a-entity>
+    <a-entity
+      id="drone"
+      position="0 0 0"
+      scale="1 1 1"
+      gltf-model-next="src: url(./media/busterDrone.gltf);"
+      animation-mixer>
+    </a-entity>
 
-    <!-- Model -->
-<!--     <a-entity id="model">
-      <a-model src="https://cdn.rawgit.com/KhronosGroup/glTF-Sample-Models/master/sourceModels/AnimatedMorphCube/AnimatedMorphCube.dae"></a-model>
-    </a-entity> -->
 
+  <a-marker-camera type='pattern' url='marker/testA.patt'></a-marker-camera>
 
-    <a-marker-camera type='pattern' url='marker/testA.patt'></a-marker-camera>
-
-  </a-scene>
+</a-scene>
 
 </body>
