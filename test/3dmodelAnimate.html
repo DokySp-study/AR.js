@@ -23,14 +23,12 @@
 
 	<a-scene embedded arjs>
 
-		<a-entity scale="0.01 0.01 0.01" position="0 0 0" fbx-model="src: url(media/Dancing.fbx);"></a-entity>
+		<a-assets>
+			<a-asset-item id="test" src="Drone.dae"></a-asset-item>
+		</a-assets>
 
-		<!-- <a-assets>
-			<a-asset-item id="test" src="media/robot.gltf"></a-asset-item>
-		</a-assets> -->
-		<!-- <a-entity scale="0.01 0.01 0.01" rotation="290 80 300" obj-model="obj: #test; mtl: #test-mtl"></a-entity> -->
-		
-		<!-- <a-entity gltf-model="#test"></a-entity> -->
+		<!-- Using the asset management system. -->
+		<a-collada-model src="#test"></a-collada-model>
 
 		<a-marker-camera type='pattern' url='marker/testA.patt'></a-marker-camera>
 
