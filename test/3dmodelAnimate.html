@@ -1,37 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>A-Frame DAE</title>
+    <meta name="description" content="">
+    <script src="https://aframe.io/releases/latest/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-camera id="camera" position="0 1 0">
+      </a-camera>
 
-<head>
-	<!-- include A-Frame obviously -->
-	<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
-	<!-- include ar.js for A-Frame -->
-	<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
-	<script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
-	<script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/libs/inflate.min.js"></script>
-	
-
-</head>
-
-
-<style type="text/css">	
-#arjsDebugUIContainer {
-	visibility: hidden;
-}
-</style>
-
-<span></span>
-
-<body style='margin : 0px; overflow: hidden;'>
-
-	<a-scene embedded arjs>
-
-		<a-assets>
-			<a-asset-item id="test" src="media/atk_dae.dae"></a-asset-item>
-		</a-assets>
-
-		<!-- Using the asset management system. -->
-		<a-collada-model src="#test"></a-collada-model>
-
-		<a-marker-camera type='pattern' url='marker/testA.patt'></a-marker-camera>
-
-	</a-scene>
-
-</body>
+      <!-- Model -->
+      <a-entity id="model">
+        <a-model src="http://wafi.iit.cnr.it/smartarea/data/cnr.dae"></a-model>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
