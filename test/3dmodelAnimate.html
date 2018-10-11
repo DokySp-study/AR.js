@@ -4,6 +4,7 @@
 	<script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
 	<!-- include ar.js for A-Frame -->
 	<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+	<script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v4.2.0/dist/aframe-extras.min.js"></script>
 </head>
 
 
@@ -20,13 +21,14 @@
 	<a-scene embedded arjs>
  		
  		
-	
-		<a-assets>
+		<a-entity fbx-model="src: url(media/testModel.fbx);"></a-entity>
+
+		<!-- <a-assets>
 			<a-asset-item id="test" src="media/robot.gltf"></a-asset-item>
-		</a-assets>
+		</a-assets> -->
 		<!-- <a-entity scale="0.01 0.01 0.01" rotation="290 80 300" obj-model="obj: #test; mtl: #test-mtl"></a-entity> -->
 		
-		<a-entity gltf-model="#test"></a-entity>
+		<!-- <a-entity gltf-model="#test"></a-entity> -->
 
 	    <a-marker-camera type='pattern' url='marker/testA.patt'></a-marker-camera>
 
