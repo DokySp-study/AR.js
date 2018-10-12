@@ -31,7 +31,13 @@
 		Using the asset management system.
 		<a-collada-model src="#tree"></a-collada-model> -->
       <a-sun-sky material="sunPosition: -20 60 -5"></a-sun-sky>
-		<a-entity rotate="180 0 0" scale="0.00005 0.00005 0.00005" fbx-model="src: url(./media/Dancing.fbx);"></a-entity>
+		<!-- <a-entity rotate="180 0 0" scale="0.00005 0.00005 0.00005" fbx-model="src: url(./media/Dancing.fbx);"></a-entity> -->
+		
+		<a-assets>
+		    <a-asset-item id="test" src="media/PM3D_frog.obj" ></a-asset-item>
+		    <!-- <a-asset-item id="test-mtl" src="media/PM3D_frog.mtl"></a-asset-item> -->
+		</a-assets>
+		<a-entity position="0 0 0" scale="0.13 0.13 0.13" rotation="270 0 0" obj-model="obj: #test"></a-entity>
 
 <!--     <a-entity
       id="drone"
