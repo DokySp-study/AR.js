@@ -21,7 +21,8 @@
 
 <body style='margin : 0px; overflow: hidden;'>
 
-	<a-scene embedded arjs>
+	<!-- <a-scene embedded arjs> -->
+		<a-scene>
 
 		<!-- <a-assets>
 			<a-asset-item id="tree" src="media/atk_dae.dae"></a-asset-item>
@@ -29,7 +30,7 @@
 
 		Using the asset management system.
 		<a-collada-model src="#tree"></a-collada-model> -->
-
+      <a-sun-sky material="sunPosition: -20 60 -5"></a-sun-sky>
 		<a-entity rotate="180 0 0" scale="0.00005 0.00005 0.00005" fbx-model="src: url(./media/Dancing.fbx);"></a-entity>
 
 <!--     <a-entity
@@ -41,7 +42,7 @@
     </a-entity> -->
 
 
-  <a-marker-camera type='pattern' url='marker/testA.patt'></a-marker-camera>
+  <!-- <a-marker-camera type='pattern' url='marker/testA.patt'></a-marker-camera> -->
 
 </a-scene>
 
