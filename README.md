@@ -26,6 +26,19 @@
 
 ### 1. 기본 구조
 
+```html
+<a-scene embedded arjs>
+    
+    <!--여기에 오브젝트로 띄울 아이템 배치-->
+    <!-- <a-assets>: 오브젝트를 에셋으로 설정할 때 주로 씀 -->
+    <!-- <a-entity>: 실제 에셋을 이용하여 오브젝트를 공간에 배치 -->
+    
+    <a-marker-camera type="pattern" url="패턴파일(.patt) 경로"></a-marker-camera>
+</a-scene>
+```
+
+#### 예시
+
 ```HTML
 <!-- A-Frame과 AR.js 관련 소스 추가 -->
 <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
@@ -82,6 +95,7 @@ ___
 
 - 패턴 만들기: https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html
 - 패턴 수정: 상단의 코드 참조
+- 패턴 만들기: **패턴 인식 범위가 16x16**이므로 **백색 바탕에 알파벳 한 글자 정도**가 인식률이 높다.
 
 
 

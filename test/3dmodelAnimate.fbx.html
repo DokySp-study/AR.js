@@ -1,0 +1,49 @@
+
+<head>
+	<!-- include A-Frame obviously -->
+	<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+	<!-- include ar.js for A-Frame -->
+	<!-- <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script> -->
+	<script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+	<script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/libs/inflate.min.js"></script>
+	
+	<script src="https://mannymeadows.github.io/Noosa/aframe-sun-sky.min.js"></script>
+</head>
+
+
+<style type="text/css">	
+#arjsDebugUIContainer {
+	visibility: hidden;
+}
+</style>
+
+<span></span>
+
+<body style='margin : 0px; overflow: hidden;'>
+
+	<!-- <a-scene embedded arjs> -->
+		<a-scene>
+
+		<!-- <a-assets>
+			<a-asset-item id="tree" src="media/atk_dae.dae"></a-asset-item>
+		</a-assets>
+
+		Using the asset management system.
+		<a-collada-model src="#tree"></a-collada-model> -->
+      <a-sun-sky material="sunPosition: -20 60 -5"></a-sun-sky>
+		<a-entity rotate="0 0 0" scale="0.5 0.5 0.5" fbx-model="src: url(./media/stones.FBX);"></a-entity>
+
+<!--     <a-entity
+      id="drone"
+      position="0 0 0"
+      scale="1 1 1"
+      gltf-model-next="src: url(./media/busterDrone.gltf);"
+      animation-mixer>
+    </a-entity> -->
+
+
+  <!-- <a-marker-camera type='pattern' url='marker/testA.patt'></a-marker-camera> -->
+
+</a-scene>
+
+</body>
